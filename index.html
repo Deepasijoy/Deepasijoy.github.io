@@ -185,6 +185,7 @@
   }
   .shots.single{grid-template-columns:1fr;}
   .shots img{width:100%; height:220px; object-fit:cover; display:block; background:var(--surface-raised);}
+  .shots.charts img{object-fit:contain; background:#fff;}
 
   /* ---------- Background timeline ---------- */
   .bg-item{
@@ -275,32 +276,29 @@
     
     <!-- PE Portfolio Monitoring -->
     <div class="project">
-      <div class="shots">
-        <img
-          src="https://raw.githubusercontent.com/Deepasijoy/pe_portfolio_monitoring/main/Average%20MOIC%20by%20Sector.png"
-          alt="Average MOIC by Sector"
-          loading="lazy">
-
+      <div class="shots charts">
         <img
           src="https://raw.githubusercontent.com/Deepasijoy/pe_portfolio_monitoring/main/moic_by_company.png"
-          alt="MOIC by Company"
+          alt="Bar chart of MOIC by holding for the 14-company portfolio"
+          loading="lazy">
+        <img
+          src="https://raw.githubusercontent.com/Deepasijoy/pe_portfolio_monitoring/main/ebitda_margin_vs_moic.png"
+          alt="Scatter plot of EBITDA margin versus MOIC, labelled by company"
           loading="lazy">
       </div>
 
       <div class="project-body">
         <div class="project-top">
-          <div class="project-title">
-            PE Portfolio Monitoring &amp; Analysis
-          </div>
+          <div class="project-title">PE Portfolio Monitoring &amp; Analysis</div>
           <div class="project-badge">Financial Analytics</div>
         </div>
 
         <p class="project-desc">
-          Developed a rule-based private equity portfolio screening
-          and monitoring framework for 14 mid-cap companies using
-          public S&amp;P 500 financial data. Analysed investment
-          returns, operating profitability, sector-level MOIC and
-          portfolio performance to support investment evaluation.
+          Built a rule-based private equity portfolio screening and monitoring
+          framework for 14 mid-cap companies using public S&amp;P 500 financial
+          data. Analysed MOIC, operating profitability (EBITDA margin), sector
+          performance and distance from 52-week highs to support investment
+          evaluation.
         </p>
 
         <div class="tool-row">
@@ -314,9 +312,7 @@
         <div class="project-links">
           <a class="btn btn-ghost"
              href="https://github.com/Deepasijoy/pe_portfolio_monitoring"
-             target="_blank" rel="noopener">
-            View repo ↗
-          </a>
+             target="_blank" rel="noopener">View repo ↗</a>
         </div>
       </div>
     </div>
